@@ -8,6 +8,8 @@ docker run -d --hostname my-rabbit --name shop -p 8080:15672 -p 5672:5672 rabbit
 
 ### Architecture overview
 
+![Diagram](https://github.com/khdevnet/eventual-consistency/blob/main/docs/diagram.png)
+[Download drawio](https://github.com/khdevnet/eventual-consistency/blob/main/docs/diagram.xml)
 
 ### Roles
 * Customer Client: Send events to the "events" exchange, simulate user activity
@@ -36,3 +38,7 @@ docker run -d --hostname my-rabbit --name shop -p 8080:15672 -p 5672:5672 rabbit
 * autodelete: false 
 * exclusive: false
 * autoAsk: false
+
+## Resources
+* [RabbitMQ Model explained](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
+* [RabbitMQ examples](https://www.rabbitmq.com/tutorials/tutorial-three-python.html)
